@@ -1,0 +1,8 @@
+#hisat2 -t -p 10 -x AL-1.chr.final -1 Mb_1_R1.fastq Mb_1_R2.fastq -S Mb_1.sam && samtools view -bS Mb_1.sam > Mb_1.bam && samtools sort Mb_1.bam -o ./BAM/Mb_1.sorted.bam && echo "*** Mb_1.sorted_bam *** done"
+#hisat2 -t -p 10 -x AL-1.chr.final -1 Mb_2_R1.fastq Mb_2_R2.fastq -S Mb_2.sam && samtools view -bS Mb_2.sam > Mb_2.bam && samtools sort Mb_2.bam -o ./BAM/Mb_2.sorted.bam && echo "*** Mb_2.sorted_bam *** done"
+#hisat2 -t -p 10 -x AL-1.chr.final -1 Mb_3_R1.fastq Mb_3_R2.fastq -S Mb_3.sam && samtools view -bS Mb_3.sam > Mb_3.bam && samtools sort Mb_3.bam -o ./BAM/Mb_3.sorted.bam && echo "*** Mb_3.sorted_bam *** done"
+#hisat2 -t -p 10 -x AL-1.chr.final -1 Mb_4_R1.fastq Mb_4_R2.fastq -S Mb_4.sam && samtools view -bS Mb_4.sam > Mb_4.bam && samtools sort Mb_4.bam -o ./BAM/Mb_4.sorted.bam && echo "*** Mb_4.sorted_bam *** done"
+hisat2 -t -p 10 -x AL-1.chr.final -1 Mc_1_R1.fastq Mc_1_R2.fastq -S Mc_1.sam && samtools view -bS Mc_1.sam > Mc_1.bam && samtools sort Mc_1.bam -o ./BAM/Mc_1.sorted.bam && echo "*** Mc_1.sorted_bam *** done"
+hisat2 -t -p 10 -x AL-1.chr.final -1 Mc_2_R1.fastq Mc_2_R2.fastq -S Mc_2.sam && samtools view -bS Mc_2.sam > Mc_2.bam && samtools sort Mc_2.bam -o ./BAM/Mc_2.sorted.bam && echo "*** Mc_2.sorted_bam *** done"
+hisat2 -t -p 10 -x AL-1.chr.final -1 Mc_3_R1.fastq Mc_3_R2.fastq -S Mc_3.sam && samtools view -bS Mc_3.sam > Mc_3.bam && samtools sort Mc_3.bam -o ./BAM/Mc_3.sorted.bam && echo "*** Mc_3.sorted_bam *** done"
+hisat2 -t -p 10 -x AL-1.chr.final -1 Mc_4_R1.fastq Mc_4_R2.fastq -S Mc_4.sam && samtools view -bS Mc_4.sam > Mc_4.bam && samtools sort Mc_4.bam -o ./BAM/Mc_4.sorted.bam && echo "*** Mc_4.sorted_bam *** done"
