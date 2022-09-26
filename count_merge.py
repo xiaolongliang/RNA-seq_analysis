@@ -15,7 +15,7 @@ def main():
     return dicts
 
 def writes():
-    geninfo = Geneinfo()
+    geninfo = Geneinfo(gff)
     dicts = main()
     h = open("count_merge.txt","w")
     h.write("ID" + "\t" + "Gene" + "\t" + "Length" + "\t" + "\t".join(sys.argv[1:]) + "\n")
@@ -31,9 +31,9 @@ def writes():
         h.write(copykey + "\t" + key + "\t" + str(length) + "\t" + value + "\n")
     h.close()
 
-def Geneinfo():
+def Geneinfo(gff):
     geninfo = {}
-    with open("../../AL.filter.final.geneSymbol.gff3","r") as w:
+    with open(gff,"r") as w:
         for line in w:
             content = line.strip().split()
             if content[2] != "gene":
@@ -52,4 +52,5 @@ def Geneinfo():
     return geninfo
 
 if __name__ == "__main__":
+    gff = "AL.filter.final.geneSymbol.gff3"
     writes()
